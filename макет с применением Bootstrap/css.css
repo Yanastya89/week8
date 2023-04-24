@@ -1,0 +1,27 @@
+[class^="col"] {
+    margin: 1rem 0;
+  }
+  .navbg {
+    background-color: rgb(51, 55, 58);
+  }
+  .background {
+    color: white;
+  }
+  .backgroundjumbo {
+    background-color: lightgrey;
+  }
+  img {
+    width: 100%;
+  }
+  .nav-link {
+    color: white;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+  }
+  .bg-secondary {
+    padding: 2rem;
+  }
+  .buttonbg {
+    border: solid 0.3px;
+    color: lightgrey;
+  }

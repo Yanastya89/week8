@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: grid;
+  grid-template: repeat(3, minmax(min-content, max-content)) 1fr minmax(min-content, max-content)/1fr;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.oportunity .cards__button, .cart .btn {
+  background-color: rgb(64, 1, 136);
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  justify-content: space-between;
+  border-bottom: 0.4px solid gray;
+}
+.header .logo {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 50%;
+  gap: 0.3rem;
+}
+.header .logo__round1 {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.header .logo__round2 {
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.header .logo__round3 {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.header__title {
+  flex: 1 0 50%;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.cart__wr-brandname {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.cart__wr-brandname .round {
+  position: relative;
+}
+.cart__wr-brandname .round__round1 {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: rgba(64, 1, 136, 0.841);
+  border-radius: 50%;
+}
+.cart__wr-brandname .round__round2 {
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+  left: 7px;
+  height: 15px;
+  width: 15px;
+  background-color: rgba(255, 0, 0, 0.868);
+  border-radius: 50%;
+}
+.cart__wr-brandname__title {
+  font-weight: 400;
+}
+.cart .btn {
+  margin-right: 2rem;
+}
+
+.oportunity {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.oportunity .cards__button {
+  margin-top: 1rem;
+}
+.oportunity .cards__wr-infolast {
+  padding: 0.5rem;
+  background-color: rgba(248, 63, 63, 0.863);
+}
+.oportunity .cards__titlelast {
+  color: white;
+}
+
+.footer__nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  gap: 1rem;
+}
+.footer .nav__link {
+  color: rgb(64, 1, 136);
+}
+.footer .nav__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .cart__wr-brandname {
+    margin-left: 2rem;
+  }
+  .oportunity {
+    padding: 3rem;
+  }
+  .oportunity__wr-cards {
+    display: grid;
+    grid-template: repeat(2, minmax(min-content, max-content))/repeat(auto-fit, minmax(365px, 1fr));
+    gap: 3rem;
+  }
+  .oportunity .cards____wr-img {
+    max-width: 100%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

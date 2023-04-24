@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+html{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    }
+
+  .wrapper{
+    display: grid;
+    grid-template: repeat(3, minmax(min-content, max-content)) 1fr minmax(min-content, max-content) /1fr;
+    padding: 1rem; 
+    margin: 0 auto;
+   }
+  
+%btn{
+background-color:rgb(64, 1, 136);
+align-items: center;
+padding: 0.5rem 1rem;
+border-radius: 100px;
+color: white;}
+
+.header { display: flex;
+flex-direction: row;
+padding: 1rem 0;
+justify-content: space-between;
+border-bottom: 0.4px solid gray;
+.logo { 
+    display: flex;
+    flex-direction: row;
+    flex:1 0 50%;
+    gap: 0.3rem;
+&__round1 {  
+    height: 10px;
+    width: 10px;
+    background-color:red;
+    border-radius: 50%;
+}
+&__round2 { height: 10px;
+    width: 10px;
+    background-color:yellow;
+    border-radius: 50%; }
+&__round3 {  height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;}
+}
+&__title {
+    flex:1 0 50%;  
+ }}
+
+.cart { 
+     display: flex;
+       flex-direction: row;
+       flex-wrap:wrap;
+    justify-content: space-between; 
+    padding-top: 1rem; 
+
+   &__wr-brandname{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   .round{
+    position: relative; 
+&__round1 {   
+   position: absolute; 
+    height: 15px;
+    width: 15px;
+    background-color:rgba(64, 1, 136, 0.841);
+    border-radius: 50%;
+}
+&__round2 {  
+    position: absolute; 
+    z-index: -1;
+    top: 7px;
+    left: 7px;
+    height: 15px;
+    width: 15px;
+    background-color:rgba(255, 0, 0, 0.868);
+    border-radius: 50%;}
+   }
+
+ &__title {
+    font-weight:400;
+        
+ }
+}
+.btn { 
+    @extend%btn; 
+    margin-right: 2rem;
+}
+}
+
+ .vr { 
+ .card {
+&__title {
+        font-size: 2.75rem; 
+        font-family: 400;  
+     }
+&__text {  font-size: 1.25rem}
+
+ &__button {
+    @extend%btn;
+    font-size: 2rem; 
+    margin-bottom: 2rem;
+ }
+}
+ &__wr-img {
+     flex: 1;
+    max-width: 100%; 
+    width: 100%; } 
+    &__img{
+       width: 70%;
+        justify-content: center; 
+    } 
+ }
+ .footer { 
+    
+&__nav{
+padding: 1rem;
+ display: flex;
+flex-direction: row;
+margin-left: 3rem;
+gap: 1rem;}
+.nav{
+&__link{color: rgb(64, 1, 136);
+}
+&__link:hover{text-decoration: underline;
+}
+}
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+    @media screen and (min-width: 1024px) {
+        html {
+            font-size: 0.8rem;
+        }
+.cart{
+    &__wr-brandname{
+        margin-left: 2rem;
+}}
+    .vr { display: flex;
+        flex-direction: row;
+          justify-content: space-between;
+      
+        &__card {
+            flex: 1;
+            padding-left: 4rem;
+     }
+            
+    &__wr-img {
+        flex: 1;
+        max-width: 100%;
+         width: 100%; }
+    }
+}
